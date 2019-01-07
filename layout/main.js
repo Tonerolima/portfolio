@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default ({ children }) => (
-  <div>
+  <div id="page">
     <Head>
       <title>Tony's portfolio</title>
       <meta charSet="UTF-8" />
@@ -33,5 +33,13 @@ export default ({ children }) => (
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
       crossOrigin="anonymous"
     />
+
+    <style jsx>{`
+      #page {
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: blue;
+      }
+    `}</style>
   </div>
 );

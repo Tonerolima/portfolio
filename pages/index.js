@@ -1,5 +1,6 @@
 import Page from "../layout/main";
 import { useState, useEffect } from "react";
+import Navbar from "../components/navbar";
 
 const Index = () => {
   const [count, setCount] = useState(0);
@@ -10,15 +11,7 @@ const Index = () => {
 
   return (
     <Page>
-      <div>
-        <p className="text-danger">You clicked {count} times</p>
-        <button
-          className="btn btn-lg btn-primary rounded-0"
-          onClick={() => setCount(count + 1)}
-        >
-          Click me
-        </button>
-      </div>
+      <Navbar />
     </Page>
   );
 };
