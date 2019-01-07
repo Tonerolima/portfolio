@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio, which will serve as my online resume and contain links to all the projects I have worked on",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonerolima/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Anthony Oyathelemhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tonerolima/portfolio/issues"
+  },
+  "homepage": "https://github.com/Tonerolima/portfolio#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
