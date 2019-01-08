@@ -35,11 +35,10 @@ export default ({ children }) => (
     />
 
     <style jsx>{`
-      #page {
-        max-width: 1400px;
-        margin: 0 auto;
-        background-color: blue;
-      }
+      // #page {
+      //   max-width: 1400px;
+      //   margin: 0 auto;
+      // }
     `}</style>
   </div>
 );

@@ -1,8 +1,10 @@
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-light bg-white navbar-expand-lg">
+    <nav className="navbar navbar-light bg-transparent navbar-expand-lg fixed-top">
       <div className="container">
-        <h3 className="navbar-brand">ANTHONY</h3>
+        <h2 className="navbar-brand">
+          ANTH<span>O</span>NY
+        </h2>
         <div className="navbar-collapse collapse">
           <ul className="navbar-nav">
             <li className="nav-item active">
@@ -41,6 +43,10 @@ const Navbar = () => {
 
         .nav-link {
           font-size: 0.8rem;
+        }
+
+        span {
+          color: #f9899c;
         }
       `}</style>
     </nav>
