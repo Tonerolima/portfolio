@@ -1,3 +1,5 @@
+import Button from "./common/button";
+
 const Showcase = () => {
   return (
     <section>
@@ -7,9 +9,7 @@ const Showcase = () => {
           <span className="font-weight-light">I am </span>Anthony Oyathelemhi
         </h1>
         <h5>Fullstack Web Developer</h5>
-        <button className="btn btn-lg d-inline mt-4 text-white">
-          Contact Me
-        </button>
+        <Button text="Contact Me" classes="mt-4 text-white" />
       </div>
       <div id="sphere1" className="sphere d-none d-lg-block" />
       <div id="sphere2" className="sphere d-none d-lg-block" />
@@ -18,19 +18,11 @@ const Showcase = () => {
       <style jsx>{`
         section {
           height: 650px;
+          margin-top: -65px;
           position: relative;
         }
         .overlay {
           background: rgba(0, 0, 0, 0.3);
-        }
-        button {
-          border-radius: 50px;
-          background-color: #f9899c;
-          box-shadow: 0px 2px 22px 1px rgba(245, 244, 244, 1);
-          transition: all 0.2s linear;
-        }
-        button:hover {
-          box-shadow: 0px 2px 22px 1px rgba(200, 190, 190, 1);
         }
         #sphere1 {
           right: 0;
