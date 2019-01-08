@@ -39,14 +39,19 @@ const Navbar = () => {
       <style jsx>{`
         .navbar-brand {
           margin-right: 350px;
+          font-size: 2rem;
         }
 
         .nav-link {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
 
         span {
           color: #f9899c;
+        }
+
+        * {
+          font-family: poppins;
         }
       `}</style>
     </nav>

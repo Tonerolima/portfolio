@@ -17,6 +17,10 @@ export default ({ children }) => (
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         crossOrigin="anonymous"
       />
+      <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
+        rel="stylesheet"
+      />
     </Head>
 
     {children}
