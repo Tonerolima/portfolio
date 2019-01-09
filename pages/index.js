@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Showcase from "../components/showcase";
 import About from "../components/about";
 import Stack from "../components/stack";
+import Projects from "../components/projects";
 
 const Index = () => {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ const Index = () => {
       <Navbar />
       <Showcase />
       <About />
+      <Projects />
       <Stack />
     </Page>
   );
