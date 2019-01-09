@@ -64,11 +64,6 @@ class Navbar extends Component {
                   TECH STACK
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  CONTACT ME
-                </a>
-              </li>
             </ul>
           </div>
         </div>
