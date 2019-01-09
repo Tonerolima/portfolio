@@ -1,6 +1,6 @@
-import { useEffect } from "react";
 import { Component } from "react";
 import Scrollspy from "react-scrollspy";
+import { Link } from "react-scroll";
 
 class Navbar extends Component {
   constructor(props) {
@@ -50,24 +50,44 @@ class Navbar extends Component {
               className="navbar-nav"
             >
               <li className="nav-item">
-                <a href="#home" className="nav-link">
+                <Link
+                  to="home"
+                  className="nav-link"
+                  smooth={true}
+                  duration={1000}
+                >
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#about" className="nav-link">
+                <Link
+                  to="about"
+                  className="nav-link"
+                  smooth={true}
+                  duration={1000}
+                >
                   ABOUT ME
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#projects" className="nav-link">
+                <Link
+                  to="projects"
+                  className="nav-link"
+                  smooth={true}
+                  duration={1000}
+                >
                   PROJECTS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#stack" className="nav-link">
+                <Link
+                  to="stack"
+                  className="nav-link"
+                  smooth={true}
+                  duration={1000}
+                >
                   TECH STACK
-                </a>
+                </Link>
               </li>
             </Scrollspy>
           </div>
@@ -92,6 +112,10 @@ class Navbar extends Component {
 
           .nav-link {
             font-size: 0.9rem;
+          }
+
+          .nav-item {
+            cursor: pointer;
           }
 
           .active {
