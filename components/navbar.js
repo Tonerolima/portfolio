@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Component } from "react";
+import Scrollspy from "react-scrollspy";
 
 class Navbar extends Component {
   constructor(props) {
@@ -43,9 +44,13 @@ class Navbar extends Component {
             ANTH<span>O</span>NY
           </h2>
           <div className="navbar-collapse collapse">
-            <ul className="navbar-nav">
+            <Scrollspy
+              items={["home", "about", "projects", "stack"]}
+              currentClassName="active"
+              className="navbar-nav"
+            >
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#home" className="nav-link">
                   HOME
                 </a>
               </li>
@@ -64,7 +69,7 @@ class Navbar extends Component {
                   TECH STACK
                 </a>
               </li>
-            </ul>
+            </Scrollspy>
           </div>
         </div>
 
@@ -87,6 +92,10 @@ class Navbar extends Component {
 
           .nav-link {
             font-size: 0.9rem;
+          }
+
+          .active {
+            border-bottom: 2px solid #f9899c;
           }
 
           span {
