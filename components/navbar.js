@@ -44,23 +44,23 @@ class Navbar extends Component {
           </h2>
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav">
-              <li className="nav-item active">
+              <li className="nav-item">
                 <a href="#" className="nav-link">
                   HOME
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#about" className="nav-link">
                   ABOUT ME
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#projects" className="nav-link">
                   PROJECTS
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#stack" className="nav-link">
                   TECH STACK
                 </a>
               </li>
@@ -69,6 +69,9 @@ class Navbar extends Component {
         </div>
 
         <style jsx>{`
+          .navbar {
+            z-index: 3;
+          }
           .navbar-brand {
             margin-right: 350px;
             font-size: 2rem;

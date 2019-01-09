@@ -1,6 +1,6 @@
 const Stack = () => {
   return (
-    <section className="bg-light">
+    <section className="bg-light" id="stack">
       <div className="container py-5">
         <h1 className="mb-5 text-center">My Skillset</h1>
         <div className="row pt-5">

@@ -2,7 +2,7 @@ import Button from "./common/button";
 
 const Showcase = () => {
   return (
-    <section>
+    <section id="home">
       <div className="container d-flex flex-column h-100 justify-content-center align-items-start">
         <p className="font-weight-bold">Hello,</p>
         <h1>

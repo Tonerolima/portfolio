@@ -58,7 +58,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="mb-5">
+    <section className="mb-5" id="projects">
       <div className="container">
         <h1 className="my-5 text-center">Recent Projects</h1>
         <div className="card-columns">{renderList()}</div>
