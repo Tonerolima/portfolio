@@ -30,8 +30,10 @@ const Showcase = () => {
       <style jsx>{`
         section {
           height: 650px;
-          margin-top: -65px;
+          margin-top: -85px;
           position: relative;
+          background: url("/static/bg/large-triangles.svg");
+          /* background by SVGBackgrounds.com */
         }
         .overlay {
           background: rgba(0, 0, 0, 0.3);
@@ -61,6 +63,12 @@ const Showcase = () => {
           width: 35%;
           height: 105%;
           border-radius: 100% 0% 20% 72% / 58% 0% 0% 41%;
+        }
+
+        @media (max-width: 991px) {
+          section {
+            height: 100vh;
+          }
         }
       `}</style>
     </section>
