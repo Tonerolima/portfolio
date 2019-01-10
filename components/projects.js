@@ -58,9 +58,9 @@ const Projects = () => {
   };
 
   return (
-    <section className="mb-5" id="projects">
+    <section className="pb-5 bg-light" id="projects">
       <div className="container">
-        <h1 className="my-5 text-center">Recent Projects</h1>
+        <h1 className="py-5 text-center">Recent Projects</h1>
         <div className="card-columns">{renderList()}</div>
       </div>
     </section>

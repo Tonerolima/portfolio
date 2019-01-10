@@ -2,7 +2,7 @@ import Button from "./common/button";
 
 const About = () => {
   return (
-    <section className="bg-light" id="about">
+    <section className="bg-white" id="about">
       <div id="sphere1" className="sphere d-none d-lg-block" />
       <div id="sphere2" className="sphere d-none d-lg-block" />
       <div id="sphere3" className="sphere d-none d-lg-block" />
