@@ -17,7 +17,10 @@ const Showcase = () => {
             <i className="fab fa-2x mr-3 fa-twitter" />
           </a>
           <a href="https://github.com/tonerolima" target="_blank">
-            <i className="fab fa-2x fa-github" />
+            <i className="fab fa-2x mr-3 fa-github" />
+          </a>
+          <a href="https://medium.com/@tonero91" target="_blank">
+            <i className="fab fa-2x fa-medium-m" />
           </a>
         </p>
 
@@ -71,6 +74,10 @@ const Showcase = () => {
 
         .fa-twitter {
           color: #1da1f2;
+        }
+
+        .fa-medium-m {
+          color: black;
         }
 
         @media (max-width: 991px) {
