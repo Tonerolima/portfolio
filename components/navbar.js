@@ -43,6 +43,12 @@ class Navbar extends Component {
           <h2 className="navbar-brand">
             ANTH<span>O</span>NY
           </h2>
+          <img
+            src="https://res.cloudinary.com/cyonreginamundi/image/upload/w_70,h_70,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
+            alt="Anthony Oyathelemhi"
+            className="rounded-circle d-inline-block d-lg-none ml-auto"
+            id="avatar"
+          />
           <div className="navbar-collapse collapse">
             <Scrollspy
               items={["home", "about", "projects", "stack"]}
@@ -128,6 +134,12 @@ class Navbar extends Component {
 
           * {
             font-family: poppins;
+          }
+
+          @media (max-width: 991px) {
+            .navbar-brand {
+              margin-right: 0px;
+            }
           }
         `}</style>
       </nav>
