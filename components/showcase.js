@@ -14,10 +14,10 @@ const Showcase = () => {
             href="https://twitter.com/intent/user?user_id=95310080"
             target="_blank"
           >
-            <i className="fab fa-2x mr-2 fa-twitter" />
+            <i className="fab fa-2x mr-3 fa-twitter" />
           </a>
           <a href="https://github.com/tonerolima" target="_blank">
-            <i className="fab fa-2x mr-2 fa-github text-dark" />
+            <i className="fab fa-2x fa-github" />
           </a>
         </p>
 
@@ -63,6 +63,14 @@ const Showcase = () => {
           width: 35%;
           height: 105%;
           border-radius: 100% 0% 20% 72% / 58% 0% 0% 41%;
+        }
+
+        .fa-github {
+          color: black;
+        }
+
+        .fa-twitter {
+          color: #1da1f2;
         }
 
         @media (max-width: 991px) {
