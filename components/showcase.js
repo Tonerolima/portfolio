@@ -9,6 +9,18 @@ const Showcase = () => {
           <span className="font-weight-light">I am </span>Anthony Oyathelemhi
         </h1>
         <h5>Fullstack Web Developer</h5>
+        <p>
+          <a
+            href="https://twitter.com/intent/user?user_id=95310080"
+            target="_blank"
+          >
+            <i className="fab fa-2x mr-2 fa-twitter" />
+          </a>
+          <a href="https://github.com/tonerolima" target="_blank">
+            <i className="fab fa-2x mr-2 fa-github text-dark" />
+          </a>
+        </p>
+
         <Button text="Contact Me" classes="mt-4 text-white" />
       </div>
       <div id="sphere1" className="sphere d-none d-lg-block" />
