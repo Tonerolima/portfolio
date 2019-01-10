@@ -10,18 +10,21 @@ const About = () => {
         <div className="w-50" id="aboutMe">
           <h2 className="mb-5">About Me</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            odio quisquam voluptatem minus blanditiis at recusandae neque
-            nesciunt deleniti, minima nihil voluptatibus voluptas incidunt
-            praesentium, voluptatum, adipisci accusamus assumenda nulla.
+            I am a self-taught freelance Web Developer with experience
+            developing fullstack applications with the latest technologies.
+            These include RESTful APIs, beautiful Static and Dynamic Web Apps,
+            Single Page Apps etc.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-            odio quisquam voluptatem minus blanditiis at recusandae neque
-            nesciunt deleniti, minima nihil voluptatibus voluptas incidunt
-            praesentium, voluptatum, adipisci accusamus assumenda nulla.
+            I recently started a community (alongside other fantastic devs) on
+            Slack, focused on mentoring beginner developers gain the required
+            skills needed in today's tech world. This was done partly due to my
+            love for teaching and also to give back to the community that helped
+            make me the developer I am today. We currently support over 80
+            learners, most of them in Nigeria and some from several other
+            time-zones.
           </p>
-          <Button text="Download CV" classes="mt-4 text-white" />
+          <Button text="Hire Me" classes="mt-4 text-white" />
         </div>
       </div>
 
