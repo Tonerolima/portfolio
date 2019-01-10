@@ -68,6 +68,10 @@ const Showcase = () => {
         @media (max-width: 991px) {
           section {
             height: 100vh;
+            background: url("/static/bg/flat-mountains.svg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
           }
         }
       `}</style>
