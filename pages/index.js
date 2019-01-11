@@ -6,6 +6,7 @@ import About from "../components/about";
 import Stack from "../components/stack";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
+import Contact from "../components/contact";
 
 const Index = () => {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ const Index = () => {
       <About />
       <Projects />
       <Stack />
+      <Contact />
       <Footer />
     </Page>
   );
