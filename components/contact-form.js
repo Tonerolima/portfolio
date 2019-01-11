@@ -9,12 +9,17 @@ const Form = () => {
     message: ""
   });
 
+  const [status, setStatus] = useState("");
+  const [error, setError] = useState("");
+
   const handleChange = e => {
     return setValues({ ...values, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = e => {
     e.preventDefault();
+    setStatus("loading");
+    setError("");
 
     //construct a new url instance
     let url = new URL(
@@ -27,9 +32,22 @@ const Form = () => {
     });
 
     //send a get request with the query params
-    fetch(url).then(response => {
-      console.log(response);
-    });
+    fetch(url)
+      .then(({ ok }) => {
+        if (!ok) {
+          setError(
+            "Failed to send message. Send a mail to tonero91@gmail.com if error persists"
+          );
+          return setStatus("");
+        }
+        setStatus("done");
+        setValues({ name: "", email: "", phone: "", message: "" });
+        setTimeout(() => setStatus(""), 2000);
+      })
+      .catch(e => {
+        setError("Network failure. Please check your network and retry");
+        return setStatus("");
+      });
   };
 
   return (
@@ -74,7 +92,6 @@ const Form = () => {
           />
         </div>
       </div>
-
       <div className="form-group">
         <label htmlFor="" className="form-group-label required">
           Message
@@ -88,13 +105,38 @@ const Form = () => {
           required
         />
       </div>
-      <Button text="Send Message" classes="mt-4 text-white" type="submit" />
-
+      {error ? <p className="form-text text-danger">{error}</p> : null}
+      <button
+        className="btn btn-lg d-inline text-white"
+        type="submit"
+        disabled={!status ? false : true}
+      >
+        {!status ? (
+          "Send Message"
+        ) : status === "loading" ? (
+          <div>
+            Sending <i className="fas fa-sync fa-spin" />
+          </div>
+        ) : (
+          <div>
+            Sent <i className="fas fa-check" />
+          </div>
+        )}
+      </button>
       <style jsx>
         {`
           .form-group-label.required:after {
             content: "*";
             color: red;
+          }
+
+          button {
+            background-color: #f9899c;
+            box-shadow: 0px 2px 22px 1px rgba(245, 244, 244, 1);
+            transition: all 0.2s linear;
+          }
+          button:hover {
+            box-shadow: 0px 2px 22px 1px rgba(200, 190, 190, 1);
           }
         `}
       </style>
