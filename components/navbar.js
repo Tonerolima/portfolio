@@ -51,7 +51,7 @@ class Navbar extends Component {
           />
           <div className="navbar-collapse collapse">
             <Scrollspy
-              items={["home", "about", "projects", "stack"]}
+              items={["home", "about", "projects", "stack", "contact"]}
               currentClassName="active"
               className="navbar-nav"
             >
@@ -93,6 +93,17 @@ class Navbar extends Component {
                   duration={1000}
                 >
                   TECH STACK
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="contact"
+                  className="nav-link"
+                  smooth={true}
+                  duration={1000}
+                  offset={-200}
+                >
+                  CONTACT
                 </Link>
               </li>
             </Scrollspy>

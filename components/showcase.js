@@ -1,4 +1,5 @@
 import Button from "./common/button";
+import { Link } from "react-scroll";
 
 const Showcase = () => {
   return (
@@ -23,8 +24,9 @@ const Showcase = () => {
             <i className="fab fa-2x fa-medium-m" />
           </a>
         </p>
-
-        <Button text="Contact Me" classes="mt-4 text-white" />
+        <Link to="contact" smooth={true} duration={1000}>
+          <Button text="Contact Me" classes="mt-4 text-white" />
+        </Link>
       </div>
       <div id="sphere1" className="sphere d-none d-lg-block" />
       <div id="sphere2" className="sphere d-none d-lg-block" />

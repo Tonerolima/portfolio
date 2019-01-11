@@ -1,4 +1,5 @@
 import Button from "./common/button";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -24,7 +25,9 @@ const About = () => {
             learners, most of them in Nigeria and some from several other
             time-zones.
           </p>
-          <Button text="Hire Me" classes="mt-4 text-white" />
+          <Link to="contact" smooth={true} duration={1000}>
+            <Button text="Hire Me" classes="mt-4 text-white" />
+          </Link>
         </div>
       </div>
 
