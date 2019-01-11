@@ -15,14 +15,28 @@ const Form = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(values);
+
+    //construct a new url instance
+    let url = new URL(
+      "https://script.google.com/macros/s/AKfycbxMXWGNp4isxbz2uyQdv6Xzac4PIyVaSEl8aHFgTr7fzV_ZETU/exec"
+    );
+
+    // Add the form values to the url as query parameters
+    Object.keys(values).forEach(key => {
+      url.searchParams.append(key, values[key]);
+    });
+
+    //send a get request with the query params
+    fetch(url).then(response => {
+      console.log(response);
+    });
   };
 
   return (
     <form action="" className="col-lg-8 px-4" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="form-group col-lg-4">
-          <label htmlFor="name" className="form-group-label">
+          <label htmlFor="name" className="form-group-label required">
             Name
           </label>
           <input
@@ -31,10 +45,11 @@ const Form = () => {
             className="form-control form-control-lg"
             value={values.name}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="form-group col-lg-4">
-          <label htmlFor="email" className="form-group-label">
+          <label htmlFor="email" className="form-group-label required">
             Email
           </label>
           <input
@@ -43,6 +58,7 @@ const Form = () => {
             className="form-control form-control-lg"
             value={values.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="form-group col-lg-4">
@@ -60,7 +76,7 @@ const Form = () => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="" className="form-group-label">
+        <label htmlFor="" className="form-group-label required">
           Message
         </label>
         <textarea
@@ -69,9 +85,19 @@ const Form = () => {
           className="form-control form-control-lg"
           value={values.message}
           onChange={handleChange}
+          required
         />
       </div>
       <Button text="Send Message" classes="mt-4 text-white" type="submit" />
+
+      <style jsx>
+        {`
+          .form-group-label.required:after {
+            content: "*";
+            color: red;
+          }
+        `}
+      </style>
     </form>
   );
 };
