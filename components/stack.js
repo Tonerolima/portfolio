@@ -1,51 +1,25 @@
+import Item from "./stack-item";
+
 const Stack = () => {
   return (
     <section className="bg-white" id="stack">
       <div className="container py-5">
         <h1 className="mb-5 text-center">My Skillset</h1>
-        <div className="row pt-5">
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/html5.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/css3.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/javascript.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/nodejs.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/expressjs.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/mongodb.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/jquery.gif" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/react.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/postgresql.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/git.jpg" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/github.svg" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/bootstrap.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/nextjs.png" alt="" />
-          </div>
-          <div className="col-md-6 col-lg-3 mb-5 d-flex align-items-center">
-            <img className="img-fluid" src="/static/travisCI.png" alt="" />
-          </div>
+        <div className="row pt-5 justify-content-center">
+          <Item src="html5.png" alt="HTML5" />
+          <Item src="css3.png" alt="CSS3" />
+          <Item src="javascript.png" alt="javascript" />
+          <Item src="nodejs.png" alt="nodejs" />
+          <Item src="expressjs.png" alt="expressjs" />
+          <Item src="mongodb.png" alt="mongodb" />
+          <Item src="jquery.gif" alt="jquery" />
+          <Item src="react.png" alt="react" />
+          <Item src="postgresql.png" alt="postgresql" />
+          <Item src="git.jpg" alt="git" />
+          <Item src="github.svg" alt="github" />
+          <Item src="bootstrap.png" alt="bootstrap" />
+          <Item src="nextjs.png" alt="nextjs" />
+          <Item src="travisCI.png" alt="travisCI" />
         </div>
       </div>
     </section>
