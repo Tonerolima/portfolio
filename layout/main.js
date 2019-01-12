@@ -21,6 +21,11 @@ export default ({ children }) => (
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"
         rel="stylesheet"
       />
+      <link
+        rel="icon"
+        type="image/ico"
+        href="https://res.cloudinary.com/cyonreginamundi/image/upload/w_70,h_70,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
+      />
     </Head>
 
     {children}
