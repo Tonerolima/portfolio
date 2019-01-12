@@ -44,7 +44,7 @@ class Navbar extends Component {
             ANTH<span>O</span>NY
           </h2>
           <img
-            src="https://res.cloudinary.com/cyonreginamundi/image/upload/w_70,h_70,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
+            src="https://res.cloudinary.com/cyonreginamundi/image/upload/w_65,h_65,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
             alt="Anthony Oyathelemhi"
             className="rounded-circle d-inline-block d-lg-none ml-auto"
             id="avatar"
