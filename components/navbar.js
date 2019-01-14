@@ -43,12 +43,7 @@ class Navbar extends Component {
           <h2 className="navbar-brand">
             ANTH<span>O</span>NY
           </h2>
-          <img
-            src="https://res.cloudinary.com/cyonreginamundi/image/upload/w_65,h_65,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
-            alt="Anthony Oyathelemhi"
-            className="rounded-circle d-inline-block d-lg-none ml-auto"
-            id="avatar"
-          />
+          <i className="fas fa-bars fa-2x d-lg-none ml-auto" />
           <div className="navbar-collapse collapse">
             <Scrollspy
               items={["home", "about", "projects", "stack", "contact"]}
@@ -117,6 +112,7 @@ class Navbar extends Component {
           .navbar-brand {
             margin-right: 350px;
             font-size: 2rem;
+            margin-bottom: 0;
           }
 
           .navbar.visible {
@@ -150,6 +146,10 @@ class Navbar extends Component {
           @media (max-width: 991px) {
             .navbar-brand {
               margin-right: 0px;
+            }
+
+            .fas {
+              font-family: "Font Awesome 5 Free";
             }
           }
         `}</style>
