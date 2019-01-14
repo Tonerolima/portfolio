@@ -6,9 +6,12 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.calcScroll = this.calcScroll.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
 
     this.state = {
-      scrolled: false
+      scrolled: false,
+      menu: "",
+      icon: "fa-bars"
     };
   }
 
@@ -36,6 +39,20 @@ class Navbar extends Component {
     }
   }
 
+  toggleMenu() {
+    if (this.state.menu === "") {
+      this.setState({
+        menu: "visible",
+        icon: "fa-times"
+      });
+    } else {
+      this.setState({
+        menu: "",
+        icon: "fa-bars"
+      });
+    }
+  }
+
   render() {
     return (
       <nav className="navbar navbar-light bg-transparent navbar-expand-lg">
@@ -43,8 +60,17 @@ class Navbar extends Component {
           <h2 className="navbar-brand">
             ANTH<span>O</span>NY
           </h2>
-          <i className="fas fa-bars fa-2x d-lg-none ml-auto" />
-          <div className="navbar-collapse collapse">
+          <i
+            className={`fas ${this.state.icon} fa-2x d-lg-none ml-auto`}
+            onClick={this.toggleMenu}
+          />
+          <div className={`nav-collapse ${this.state.menu}`}>
+            <img
+              src="https://res.cloudinary.com/cyonreginamundi/image/upload/w_200,h_200,c_fill,g_face/cyon/np5hxeilpwj9g8whgx5n.jpg"
+              alt="Anthony Oyathelemhi"
+              className="rounded-circle d-inline-block d-lg-none"
+              id="avatar"
+            />
             <Scrollspy
               items={["home", "about", "projects", "stack", "contact"]}
               currentClassName="active"
@@ -56,6 +82,7 @@ class Navbar extends Component {
                   className="nav-link"
                   smooth={true}
                   duration={1000}
+                  onClick={this.toggleMenu}
                 >
                   HOME
                 </Link>
@@ -66,6 +93,7 @@ class Navbar extends Component {
                   className="nav-link"
                   smooth={true}
                   duration={1000}
+                  onClick={this.toggleMenu}
                 >
                   ABOUT ME
                 </Link>
@@ -76,6 +104,7 @@ class Navbar extends Component {
                   className="nav-link"
                   smooth={true}
                   duration={1000}
+                  onClick={this.toggleMenu}
                 >
                   PROJECTS
                 </Link>
@@ -86,6 +115,7 @@ class Navbar extends Component {
                   className="nav-link"
                   smooth={true}
                   duration={1000}
+                  onClick={this.toggleMenu}
                 >
                   TECH STACK
                 </Link>
@@ -96,6 +126,7 @@ class Navbar extends Component {
                   className="nav-link"
                   smooth={true}
                   duration={1000}
+                  onClick={this.toggleMenu}
                   offset={-200}
                 >
                   CONTACT
@@ -110,7 +141,7 @@ class Navbar extends Component {
             z-index: 3;
           }
           .navbar-brand {
-            margin-right: 350px;
+            margin-right: 300px;
             font-size: 2rem;
             margin-bottom: 0;
           }
@@ -150,6 +181,47 @@ class Navbar extends Component {
 
             .fas {
               font-family: "Font Awesome 5 Free";
+              transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+              z-index: 5;
+            }
+
+            .nav-collapse {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              position: absolute;
+              top: 0;
+              right: -992px;
+              height: 100vh;
+              width: 100vw;
+              background: #707787fa;
+              font-size: 2rem;
+              padding: 50px 0;
+              transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            }
+
+            .nav-collapse.visible {
+              right: 0;
+            }
+
+            .nav-collapse > img {
+              margin-bottom: auto;
+            }
+
+            .nav-item {
+              width: max-content;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 10px;
+            }
+
+            .nav-item + .nav-item {
+              margin-top: 10px;
+            }
+
+            .fa-times {
+              color: #ffffff;
+              transform: rotate(-180deg);
             }
           }
         `}</style>
