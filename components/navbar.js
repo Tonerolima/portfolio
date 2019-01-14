@@ -130,7 +130,6 @@ class Navbar extends Component {
                   smooth={true}
                   duration={1000}
                   onClick={this.toggleMenu}
-                  offset={-200}
                 >
                   CONTACT
                 </Link>
