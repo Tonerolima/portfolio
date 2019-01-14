@@ -44,10 +44,9 @@ export default ({ children }) => (
     />
 
     <style jsx>{`
-      // #page {
-      //   max-width: 1400px;
-      //   margin: 0 auto;
-      // }
+      #page {
+        overflow-x: hidden;
+      }
     `}</style>
   </div>
 );
