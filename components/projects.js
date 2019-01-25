@@ -3,11 +3,18 @@ import ProjectCard from "./project-card";
 const Projects = () => {
   const projectList = [
     {
-      name: "Shifter",
+      name: "MRA Cultural Day 2019",
+      desc: "A JAM stack web app for the Magodo GRA cultural day",
+      stack: "React, Next, Bootstrap 4",
+      image: "/static/projects/mra-cultural-day.png",
+      url: "https://www.mraculturalday.com/"
+    },
+    {
+      name: "Diplomat Delivery",
       desc: "A JAM stack web app for a fictional courier service company",
       stack: "Node, Express, Mongodb, React, Next, Bootstrap 4, jQuery",
       image: "/static/projects/shifter.png",
-      url: "http://shifter.cf/"
+      url: "https://diplomatdelivery.cf/"
     },
     {
       name: "CYON - Regina Mundi",
@@ -22,7 +29,7 @@ const Projects = () => {
       desc: "A JAM stack web app for a fictional food delivery company",
       stack: "Node, Express, PostgreSQL, React",
       image: "/static/projects/fast-food-fast.png",
-      url: "http://fff-react.herokuapp.com"
+      url: "https://fff-react.herokuapp.com"
     },
     {
       name: "YelpCamp",
@@ -45,7 +52,7 @@ const Projects = () => {
         "A simple game where users try to select the correct color in the displayed RGB representation",
       stack: "HTML, CSS, JavaScript",
       image: "/static/projects/color-game.png",
-      url: "http://tonerolima.github.io/ColorGame"
+      url: "https://tonerolima.github.io/ColorGame"
     }
   ];
 
